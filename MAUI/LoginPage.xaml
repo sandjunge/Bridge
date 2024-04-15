@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.LoginPage"
+             Title="">
+
+    <Grid x:Name="LoginGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Row="1" Grid.Column="2" Margin="0,0,0, 100" HeightRequest="500" WidthRequest="500" BackgroundColor="#232936" VerticalOptions="Center" HorizontalOptions="Center">
+            <Rectangle.Shadow>
+                <Shadow Brush="Black" Offset="20,20" Radius="40" Opacity="0.5" />
+            </Rectangle.Shadow>
+        </Rectangle>
+        <VerticalStackLayout Grid.Row="1" Grid.Column="2" Margin="0,0,0,100" VerticalOptions="Center" Width="255" Height="255">
+            <Label Text="Willkommen zurück!"/>
+            <Label Text="Wir haben schon auf dich gewartet!"/>
+            <Label Text="Email"/>
+            <Entry Width="500" Height="50"></Entry>
+            <Label Text="Password"/>
+            <Entry Width="500" Height="50"></Entry>
+            <Button Text="Login" Width="100" Height="20"></Button>
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
